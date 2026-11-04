@@ -1,0 +1,120 @@
+# ==============================================================================
+# Risultati ed Esperimenti
+# ==============================================================================
+results/
+
+# ==============================================================================
+# Contenuti delle sottocartelle di data/ 
+# Esclude tutti i contenuti/file dentro le sottocartelle di data/,
+# mantenendo navigabili le cartelle e tracciabili i file .gitkeep
+# ==============================================================================
+data/*/**/*
+!data/**/
+!data/**/.gitkeep
+!.gitkeep
+
+# File di grandi dimensioni / dataset / archivi
+*.dat
+*.parquet
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ==============================================================================
+# Bytecode e cache Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==============================================================================
+# Ambienti virtuali e variabili d'ambiente
+# ==============================================================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.env
+.env.*
+!.env.example
+
+
+# ==============================================================================
+# Modelli, pesi, checkpoint e serializzazioni
+# ==============================================================================
+*.pt
+*.pth
+*.pwf
+*.ckpt
+*.bin
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# ==============================================================================
+# Log, monitoraggio esperimenti e notebook
+# ==============================================================================
+*.log
+logs/
+wandb/
+runs/
+lightning_logs/
+.ipynb_checkpoints/
+
+# ==============================================================================
+# Build, packaging, test e profiling
+# ==============================================================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ==============================================================================
+# Configurazioni IDE ed Editor
+# ==============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ==============================================================================
+# File di sistema operativo (Windows, macOS, Linux)
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
